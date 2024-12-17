@@ -1,0 +1,54 @@
+.carousel {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Añade espacio para evitar que las frases queden pegadas */
+    box-sizing: border-box; /* Asegura que padding no afecte el ancho del contenedor */
+}
+
+.carousel-phrase {
+    font-size: 24px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    max-width: 80%;
+    border-radius: 10px;
+    max-height: 300px; /* Define un máximo para evitar desbordes excesivos */
+    overflow: auto; /* Permite desplazamiento si el contenido excede la altura máxima */
+    text-overflow: ellipsis; /* Crea puntos suspensivos si es necesario */
+    word-wrap: break-word; /* Divide palabras largas para evitar desbordes */
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.prev { 
+    left: 10px; 
+}
+
+.next { 
+    right: 10px; 
+}
